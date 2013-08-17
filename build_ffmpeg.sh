@@ -21,17 +21,6 @@ fi
 
 MODULES_FLAGS="
 --disable-programs 
---disable-avdevice
---disable-swresample
---disable-swscale
---disable-postproc
---disable-avfilter
---disable-everything 
---enable-encoder=aac 
---enable-encoder=wav 
---enable-demuxer=ogg
---enable-demuxer=wav
---enable-demuxer=gif
 "
 
 echo "Building for MacOSX ..."
