@@ -1,0 +1,13 @@
+diff --git a/configure b/configure
+index 02656b4..fefe841 100755
+--- a/configure
++++ b/configure
+@@ -3478,7 +3478,7 @@ case $target_os in
+         SHFLAGS='-dynamiclib -Wl,-single_module -Wl,-install_name,$(SHLIBDIR)/$(SLIBNAME_WITH_MAJOR),-current_version,$(LIBVERSION),-compatibility_version,$(LIBMAJOR)'
+         enabled x86_32 && append SHFLAGS -Wl,-read_only_relocs,suppress
+         strip="${strip} -x"
+-        add_ldflags -Wl,-dynamic,-search_paths_first
++        add_ldflags -dynamic -search_paths_first
+         SLIBSUF=".dylib"
+         SLIBNAME_WITH_VERSION='$(SLIBPREF)$(FULLNAME).$(LIBVERSION)$(SLIBSUF)'
+         SLIBNAME_WITH_MAJOR='$(SLIBPREF)$(FULLNAME).$(LIBMAJOR)$(SLIBSUF)'
