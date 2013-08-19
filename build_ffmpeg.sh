@@ -100,4 +100,4 @@ do
     lipo $files -create -output "$PREFIX/universal/lib/$file"
 done
 
-cp -r $PREFIX/i386/include/* $PREFIX/universal/include/
+cp -r $PREFIX/$ARCHS/include/* $PREFIX/universal/include/
